@@ -1,18 +1,30 @@
+//get id 
+
 const display = document.getElementById("display");
 
-function appendToDisplay(input) {
-    display.value += input;
+//value on display
+function apendOnDisplay(input) { //apendOnDisplay onclick function on btn
+    display.value += input; //
+
+
 }
 
-function clearDisplay() {
+//Clear Display
+
+function clearDisplay() { //clearDisplay onclick function on Clear btn
     display.value = "";
 
+
 }
 
-function calculate() {
+// Display calculation
+
+function result() { //result onclick function on btn HTML
     try {
-        display.value = eval(display.value);
+        display.value = eval(display.value); //eval maens (number1+number2)
     } catch (error) {
-        display.value = "Error";
+        display.value = "Error"
     }
+
+
 }
